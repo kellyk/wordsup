@@ -1,0 +1,22 @@
+[{
+    "id": "blockbusters",
+    "name": "Blockbusters",
+    "icon": "movie",
+    "cards": ["Independence Day", "Avatar", "When Harry Met Sally", "The Truman Show", "Knives Out", "Saving Private Ryan", "Sleepless in Seattle", "John Wick"],
+    "description": "Blockbuster movies"
+  },
+  {
+    "id": "lovesongs",
+    "name": "Love Songs",
+    "icon": "music",
+    "cards": ["Anyone by Justin Beiber", "Shape of You by Ed Sheeran", "I'm Yours by Jason Mraz", "Love Story by Taylor Swift", "All of Me by John Legend", "Thinking Out Loud by Ed Sheeran", "Perfect by Ed Sheeran", "A Thousand Years by Christina Perri"],
+    "description": "Hum or sing these love songs to get your partner to guess the title"
+  },
+  {
+    "id": "superheroes",
+    "name": "Superheroes",
+    "icon": "hero",
+    "cards": ["Batman", "Superman", "Wolverine", "Storm", "Robin", "Spiderman", "Deadpool", "The Hulk", "Green Lantern"],
+    "description": "Your favorite super heroes and sidekicks"
+  }
+]
