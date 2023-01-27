@@ -1,6 +1,15 @@
 <template>
   <div class="app" id="app">
-    <h1>{{ title }}</h1>
+    <div class="nav">
+    <h1 class="title">
+      <span class="logo"><AirBalloonIcon size="44" fillColor="rgb(255 153 31)" /></span>
+      <span class="titleText">
+        <span class="w">W</span>
+        <span class="ordsup">ordsUp</span>
+      </span>
+    </h1>
+
+    </div>
     <div class="main">
       <div class="decks">
         <h2>Decks</h2>
@@ -31,13 +40,14 @@
 import PlayerIcon from './components/PlayerIcon.vue';
 import DeckTile from './components/DeckTile.vue';
 import data from './data/decks.json';
-
+import AirBalloonIcon from 'vue-material-design-icons/Bee.vue';
 
 export default {
   name: 'App',
   components: {
     PlayerIcon,
-    DeckTile
+    DeckTile,
+    AirBalloonIcon
   },
   data() {
     return {
@@ -88,17 +98,58 @@ button, input {
 }
 
 .app {
+  background: #ffce74;
+}
+
+.title {
+  margin: 0;
+  padding: .25em;
   width: 960px;
   margin: 0 auto;
+  line-height: 36px;
+  margin-top: 0.4em;
+}
+
+.titleText {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-left: 27px;
+  position: relative;
+}
+
+.w {
+  rotate: 21deg;
+  position: absolute;
+  top: -5px;
+  left: 7px;
+}
+
+.ordsup {
+  margin-left: 40px;
+  position: absolute;
+}
+
+.logo {
+  position: absolute;
+  top: -4px;
+}
+.nav {
+  background-color: white;
+  border-bottom: 2px solid rgb(255 153 31);
+  padding: 0.25em;
 }
 
 .main {
   display: flex;
   flex-direction: column;
+  width: 960px;
+  margin: 0 auto;
+  background:white;
+  padding: 1em 3em;
 }
 
 .divider {
-  border-top: 1px solid rgba(251, 183, 101);
+  margin-top: 3em;
+  border-top: 1px solid rgb(255 153 31);
 }
 
 .deckTiles {

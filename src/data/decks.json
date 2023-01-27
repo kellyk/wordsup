@@ -10,7 +10,7 @@
     "name": "Love Songs",
     "icon": "music",
     "cards": ["Anyone by Justin Beiber", "Shape of You by Ed Sheeran", "I'm Yours by Jason Mraz", "Love Story by Taylor Swift", "All of Me by John Legend", "Thinking Out Loud by Ed Sheeran", "Perfect by Ed Sheeran", "A Thousand Years by Christina Perri"],
-    "description": "Hum or sing these love songs to get your partner to guess the title"
+    "description": "Hum or sing these love songs to get your team to guess the title"
   },
   {
     "id": "superheroes",
@@ -22,8 +22,15 @@
   {
     "id": "accents",
     "name": "Accents and impressions",
-    "icon": "hero",
+    "icon": "drama",
     "cards": ["Scottish", "Christopher Walken", "German", "New Jersey", "British"],
-    "description": "Your favorite super heroes and sidekicks"
+    "description": "Put on your best impression of the accent or character on the card"
+  },
+  {
+    "id": "rockballads",
+    "name": "Rock Ballads",
+    "icon": "music",
+    "cards": ["Hey Jude by the Beatles", "Imagine by John Lennon", "Piano Man by Billy Joel", "Knockin on Heaven's Door by Bob Dylan", "Dream on by Aerosmith", "Tiny Dancer by Elton John"],
+    "description": "Hum or sing these rock ballads to get your team to guess the title"
   }
 ]
