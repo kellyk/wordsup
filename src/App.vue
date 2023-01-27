@@ -2,21 +2,21 @@
   <div class="app" id="app">
     <h1>{{ title }}</h1>
     <div class="main">
-      <MenuIcon />
       <div class="decks">
         <h2>Decks</h2>
-        <ul>
-          <li v-for="deck in decks" :key="deck.id">
-            <p>{{ deck.name }}</p>
-            <p>{{ deck.description }}</p>
-            <span v-if="deck.icon === 'movie'"><MovieIcon /></span>
-            <span v-else-if="deck.icon === 'music'"><MusicIcon /></span>
-            <span v-else-if="deck.icon === 'hero'"><HeroIcon /></span>
-          </li>
-        </ul>
+          <div class="deckTiles">
+            <DeckTile
+              v-for="deck in decks"
+              v-bind:key="deck.name"
+              :name="deck.name"
+              :description="deck.description"
+              :icon="deck.icon"
+            ></DeckTile>
+          </div>
       </div>
+      <div class="divider" />
       <div class="players">
-        <p>Players</p>
+        <h2>Players</h2>
         <div class="playerIcons">
           <PlayerIcon color="red" name="Kelly"/>
           <PlayerIcon color="blue" name="Jon"/>
@@ -28,20 +28,16 @@
 </template>
 
 <script>
-import PlayerIcon from './components/PlayerIcon.vue'
+import PlayerIcon from './components/PlayerIcon.vue';
+import DeckTile from './components/DeckTile.vue';
 import data from './data/decks.json';
-import MovieIcon from 'vue-material-design-icons/MovieOpen.vue';
-import MusicIcon from 'vue-material-design-icons/Music.vue';
-import HeroIcon from 'vue-material-design-icons/Sword.vue';
 
 
 export default {
   name: 'App',
   components: {
     PlayerIcon,
-    MovieIcon,
-    MusicIcon,
-    HeroIcon
+    DeckTile
   },
   data() {
     return {
@@ -73,6 +69,8 @@ export default {
 body {
   color: #222;
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 ul {
@@ -90,13 +88,27 @@ button, input {
 }
 
 .app {
-  padding: 0 1em;
+  width: 960px;
+  margin: 0 auto;
 }
 
-/* .main {
+.main {
   display: flex;
-  gap: 2em;
-} */
+  flex-direction: column;
+}
+
+.divider {
+  border-top: 1px solid rgba(251, 183, 101);
+}
+
+.deckTiles {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  /* grid-template-columns:  repeat(auto-fill, minmax(200px, 250px)); */
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
 
 .players {
   display: flex;

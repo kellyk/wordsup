@@ -3,7 +3,7 @@
     "name": "Blockbusters",
     "icon": "movie",
     "cards": ["Independence Day", "Avatar", "When Harry Met Sally", "The Truman Show", "Knives Out", "Saving Private Ryan", "Sleepless in Seattle", "John Wick"],
-    "description": "Blockbuster movies"
+    "description": "Blockbuster movies from the past and present"
   },
   {
     "id": "lovesongs",
@@ -17,6 +17,13 @@
     "name": "Superheroes",
     "icon": "hero",
     "cards": ["Batman", "Superman", "Wolverine", "Storm", "Robin", "Spiderman", "Deadpool", "The Hulk", "Green Lantern"],
+    "description": "Your favorite super heroes and sidekicks"
+  },
+  {
+    "id": "accents",
+    "name": "Accents and impressions",
+    "icon": "hero",
+    "cards": ["Scottish", "Christopher Walken", "German", "New Jersey", "British"],
     "description": "Your favorite super heroes and sidekicks"
   }
 ]
